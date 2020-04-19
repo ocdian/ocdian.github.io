@@ -71,7 +71,7 @@
     }
 
     .table-container {
-        overflow-x: auto;
+        overflow-x: scroll;
         position: relative;
         z-index: -1; /* stop the scroll bar from overlapping with the top nav  */
     }
