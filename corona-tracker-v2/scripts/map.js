@@ -49,8 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     name: 'COVID-19 Cases',
                     joinBy: ['iso-a3', 'iso3'],
                     data: data,
-                    minSize: 20,
-                    maxSize: '15%',
+                    minSize: 15,
+                    maxSize: '13%',
                     tooltip: {
                         pointFormat:
                             "<strong>Country:</strong> " + "{point.country}<br>" +
