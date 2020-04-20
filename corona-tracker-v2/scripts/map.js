@@ -7,7 +7,7 @@ function formatNumber(value) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    fetch(proxy + api)
+    fetch(api)
         .then(response => response.json())
         .then(result => {
             var data = new Array();
