@@ -71,9 +71,9 @@
     }
 
     .table-container {
-        overflow-x: scroll;
+        overflow-x: auto;/*
         position: relative;
-        z-index: -1; /* stop the scroll bar from overlapping with the top nav  */
+        z-index: -1;*/
     }
 
     #country-picker-container {
