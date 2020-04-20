@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     countryPickerDatalist = document.getElementById("countries-datalist");
     countryPickerInput = document.getElementById("country-picker");
     
-    fetch(proxy+"https://corona.lmao.ninja/v2/all")
+    fetch("https://corona.lmao.ninja/v2/all")
     .then(response => response.json())
     .then(result => {
         totalCases = result.cases
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
         alert(error_message);
         console.log(error);
     });
-    fetch(proxy+"https://corona.lmao.ninja/v2/countries?sort=cases")
+    fetch("https://corona.lmao.ninja/v2/countries?sort=cases")
     .then(response => response.json())
     .then(result => {
         itemsCount = result.length;
