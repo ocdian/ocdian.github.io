@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     joinBy: ['iso-a3', 'iso3'],
                     data: data,
                     minSize: 15,
-                    maxSize: '13%',
+                    maxSize: '11%',
                     tooltip: {
                         pointFormat:
                             "<strong>Country:</strong> " + "{point.country}<br>" +
