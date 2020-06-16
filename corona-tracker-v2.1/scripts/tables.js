@@ -117,7 +117,7 @@ function CountryPickerUpdate() {
     let chosenCountryName = countryPickerInput.value.toLowerCase();
     let chosenCountryID = countryIDs[chosenCountryName];
     let chosenCountry = data[chosenCountryID];
-    if (chosenCountry === undefined) return;
+    if (chosenCountry === undefined || totalCases === undefined) return;
     document.getElementById("country-picker-total-cases").innerHTML = chosenCountry.cases.toLocaleString("en-us", { minimumFractionDigits: 0 });
     document.getElementById("country-picker-total-deaths").innerHTML = chosenCountry.deaths.toLocaleString("en-us", { minimumFractionDigits: 0 });
     document.getElementById("country-picker-total-recovered").innerHTML = chosenCountry.recovered.toLocaleString("en-us", { minimumFractionDigits: 0 });
