@@ -20,8 +20,8 @@ var totalDeaths;
 var totalRecovered;
 var error_message = "Something went wrong. We apologize for the inconvenience.";
 var proxy = "https://cors-anywhere.herokuapp.com/";
-let all_link = "https://disease.sh/v2/all";
-let countries_list = "https://disease.sh/v2/countries?sort=cases";
+let all_link = "https://disease.sh/v3/covid-19/all";
+let countries_list = "https://disease.sh/v3/covid-19/countries?sort=cases";
 
 document.addEventListener("DOMContentLoaded", function () {
     tableBody = document.getElementById("table-body");

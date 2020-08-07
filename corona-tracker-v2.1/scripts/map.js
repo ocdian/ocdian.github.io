@@ -1,5 +1,5 @@
 var proxy = "https://cors-anywhere.herokuapp.com/";
-var countries_list = "https://disease.sh/v2/countries?sort=cases";
+var countries_list = "https://disease.sh/v3/covid-19/countries?sort=cases";
 var error_message = "Something went wrong. We apologize for the inconvenience.";
 
 function formatNumber(value) {

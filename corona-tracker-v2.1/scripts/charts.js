@@ -104,7 +104,7 @@ var deathsPointCollection;
 var recoveredPointCollection;
 
 function getHistoricalCountry(countryName, lastDays, chartID, update = false) {
-    let historical_country = `https://disease.sh/v2/historical/${countryName}?lastdays=${lastDays}`;
+    let historical_country = `https://disease.sh/v3/covid-19/historical/${countryName}?lastdays=${lastDays}`;
     fetch(historical_country)
     .then(response => response.json())
     .then(result => {
@@ -138,7 +138,7 @@ function getHistoricalCountry(countryName, lastDays, chartID, update = false) {
 }
 
 function populateDatalist() {
-    var countries_list = "https://disease.sh/v2/countries?sort=cases";
+    var countries_list = "https://disease.sh/v3/covid-19/countries?sort=cases";
     fetch(countries_list)
     .then(response => response.json())
     .then(result => {

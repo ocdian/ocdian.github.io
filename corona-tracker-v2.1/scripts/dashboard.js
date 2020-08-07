@@ -1,8 +1,8 @@
 /*
 Dashboard scripts
 */
-let all_link = "https://disease.sh/v2/all";
-let historical_all_link = "https://disease.sh/v2/historical/all?lastdays=all";
+let all_link = "https://disease.sh/v3/covid-19/all";
+let historical_all_link = "https://disease.sh/v3/covid-19/historical/all?lastdays=all";
 let error_message = "Something went wrong. We apologize for the inconvenience.";
 document.addEventListener("DOMContentLoaded", function () {
     /*  Filling up the stats cards */
