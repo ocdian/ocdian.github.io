@@ -91,6 +91,20 @@ body {
   box-shadow: 0px 15px 10px 5px #cecece;
 }
 
+.blue-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+a:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.cancel-btn, .blue-btn, a {
+  transition: 0.5s;
+}
+
 .cancel-btn {
   color: #7280a7;
   font-weight: 700;
@@ -99,6 +113,7 @@ body {
 
 .cancel-btn:hover {
   cursor: pointer;
+  color: #1f2f56;
 }
 
 @media only screen and (max-width: 530px) {
